@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0">
+		<title>流量查询</title>
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="head-con">
+				<div class="canvas-two clearfix">
+					<div class="left">
+						<canvas id="incomplete" width="150" height="150"></canvas>
+						<div class="canv-content">
+							<div>通用流量已用</div>
+							<div>
+								<div class="num">11.85</div>GB
+							</div>
+							<div class="yy">
+								已使用70%
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<canvas id="incomplete-one" width="150" height="150"></canvas>
+						<div class="canv-content">
+							<div>其他流量已用</div>
+							<div>
+								<div class="num">6.95</div>GB
+							</div>
+							<div class="yy">
+								已使用15%
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="head-title">
+					<div class="bxl">不限速流量使用中</div>
+				</div>
+				<div class="nav clearfix">
+					<div class="left active">通用流量详情</div>
+					 <div class="right">其他流量详情</div>
+				</div>
+			</div>
+			<div class="general first clearfix">
+				<div class="left">
+					<span>通用流量已用</span>
+					<span><span class="big-font">11.85</span>GB</span>
+					<span>通用流量使用至<span class="big-font">110.00</span>GB将限速</span>
+				</div>
+				<div class="right">
+					<img src="img/bjm.png" alt="">
+				</div>
+			</div>
+			<div class="general second clearfix" style="display: none;">
+				<div class="left">
+					<span>其他流量已用</span>
+					<span><span class="big-font">6.95</span>GB</span>
+					<span>其他流量使用至<span class="big-font">110.00</span>GB将限速</span>
+				</div>
+				<div class="right">
+					<img src="img/bjm.png" alt="">
+				</div>
+			</div>
+			<div class="detailed">
+				<div class="d-container">
+					<div class="item">
+						<div class="item-title">
+							<span class="icon"><img src="img/icon.png"></span>
+							<span>上月通用流量结转</span>
+						</div>
+						<div class="item-detail">
+							<span>国内通用流量</span>
+							<div class="surplus clearfix">
+								<span class="left">剩余<span class="ft-s">181.73MB</span>/<span>总量5GB</span></span>
+								<span class="right">已用1.25GB</span>
+							</div>
+							<div class="progress">
+								<div class="progress-bar"></div>
+							</div>
+						</div>
+					</div>
+					<div class="m-hidden" style="display:none;">
+						<div class="item">
+							<div class="item-title">
+								<span class="icon"><img src="img/icon.png"></span>
+								<span>任我用流量包C</span>
+							</div>
+							<div class="item-detail">
+								<span>国内通用流量</span>
+								<div class="surplus clearfix">
+									<span class="left">剩余<span class="ft-s">181.73MB</span>/<span>总量5GB</span></span>
+									<span class="right">已用4.82GB</span>
+								</div>		
+								<div class="progress">
+									<div class="progress-barf"></div>
+								</div>
+							</div>
+							<div class="item-detail">
+								<span>套外赠送国内流量</span>
+								<div class="surplus clearfix">
+									<span class="left">剩余<span class="ft-s">5GB</span>/<span>总量5GB</span></span>
+									<span class="right">已用0MB</span>
+								</div>		
+								<div class="progress">
+									<div class="progress-bars"></div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-title">
+								<span class="icon"><img src="img/icon.png"></span>
+								<span>288元畅想套餐（包含138元语音包、150元流量包）</span>
+							</div>
+							<div class="item-detail">
+								<span>国内通用流量</span>
+								<div class="surplus clearfix">
+									<span class="left">剩余<span class="ft-s">181.73MB</span>/<span>总量1.35GB</span></span>
+									<span class="right">已用1.25GB</span>
+								</div>
+							</div>
+							<div class="progress">
+								<div class="progress-bart"></div>
+							</div>
+					</div>
+					</div>
+					<div class="retract">
+						<div class="m-btn">
+							<span class="m-t">展开</span>
+							<span class="iconfont icon-zhankai"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="endless">
+				<div class="end-title">
+					<div class="tit-content">
+						<span>流量用不完</span>
+					</div>
+				</div>
+				<div class="end-content-bg">
+					<div class="end-content">
+						<div class="e-c-title clearfix">
+							<span class="m-title active">
+								<div>视频</div>
+							</span>
+							<span class="m-title">
+								阅读
+							</span>
+							<span class="m-title">
+								音乐
+							</span>
+						</div>
+						<div class="e-c-content clearfix">
+							<div class="m-pic">
+								<img src="img/1.png" alt="">
+							</div>
+							<div class="m-pic">
+								<img src="img/2.png" alt="">
+							</div>
+							<div class="m-pic">
+								<img src="img/3.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="endless">
+				<div class="end-title">
+					<div class="tit-content">
+						<span>流量不够用</span>
+					</div>
+				</div>
+				<div class="end-content-bgo">
+					<div class="end-content">
+						<div class="e-c-content clearfix">
+							<div class="m-pic">
+								<img src="img/Imagination.png" alt="">
+								<div class="m-s-f">畅想流量</div>
+							</div>
+							<div class="m-pic">
+								<img src="img/add.png" alt="">
+								<div class="m-s-f">加个号</div>
+							</div>
+							<div class="m-pic">
+								<img src="img/Recharge.png" alt="">
+								<div class="m-s-f">冲流量</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="js/circle.process.min.js"></script>
+		<script type="text/javascript">
+			CircleProcess(document.getElementById("incomplete"),{
+				  "size": "complete", // complete,half,incomplete
+				  "lineWidth": 4, // 线宽
+				  "radius": 70,  // 圆弧半径
+				  "percent": 70,  // 百分比
+				  "process": 0.00, // 起始值
+				  "backgroundCircle": { // 背景圆弧
+					"show": true, // 是否显示
+					"color": "#68daff" // 圆弧颜色
+				  },
+				  "percentCircle": { // 百分比圆弧
+					"show": true, // 是否显示
+					"color": "#fff", // 颜色
+					"speed": "gradient", // 速度 gradient normal fast
+					"gradientColorShow": false, // 是否显示梯度颜色
+					"gradientColor": "rgba(255.0.0,0.1)" // 梯度颜色 暂时不可用
+				  },
+				  "startSmallCircle": { // 起始圆点
+					"show": false,// 是否显示
+					"color": "#06a8f3",// 颜色
+					"radius": 5 // 半径
+				  },
+				  "endSmallCircle": { // 结束圆点
+					"show": true, // 是否显示
+					"color": "#62e3ff", // 颜色
+					"radius": 5 // 半径
+				  },
+				  "gradient": { // 梯度颜色 暂时不可用
+					// "color": "rgba(255,0,0,0.1)",
+					// "size": 4
+				  },
+				  "processText": { // 是否显示文字
+					"show": false // 是否显示
+				  }
+		   });
+		   CircleProcess(document.getElementById("incomplete-one"),{
+			  "size": "complete", // complete,half,incomplete
+			  "lineWidth": 4, // 线宽
+			  "radius": 70,  // 圆弧半径
+			  "percent": 15,  // 百分比
+			  "process": 0.00, // 起始值
+			  "backgroundCircle": { // 背景圆弧
+				"show": true, // 是否显示
+				"color": "#68daff" // 圆弧颜色
+			  },
+			  "percentCircle": { // 百分比圆弧
+				"show": true, // 是否显示
+				"color": "#fff", // 颜色
+				"speed": "gradient", // 速度 gradient normal fast
+				"gradientColorShow": false, // 是否显示梯度颜色
+				"gradientColor": "rgba(255.0.0,0.1)" // 梯度颜色 暂时不可用
+			  },
+			  "startSmallCircle": { // 起始圆点
+				"show": false,// 是否显示
+				"color": "#06a8f3",// 颜色
+				"radius": 5 // 半径
+			  },
+			  "endSmallCircle": { // 结束圆点
+				"show": true, // 是否显示
+				"color": "#62e3ff", // 颜色
+				"radius": 5 // 半径
+			  },
+			  "gradient": { // 梯度颜色 暂时不可用
+				// "color": "rgba(255,0,0,0.1)",
+				// "size": 4
+			  },
+			  "processText": { // 是否显示文字
+				"show": false // 是否显示
+			  }
+		   });
+		</script>
+		<script>
+			$(".nav div").on('click',function(){
+				$(this).siblings().removeClass('active')
+				$(this).addClass('active')
+			})
+			$(".nav .left").on('click',function(){
+				$('.first').show()
+				$('.second').hide()
+			})
+			$(".nav .right").on('click',function(){
+				$('.first').hide()
+				$('.second').show()
+			})
+			$(".m-btn").on('click',function(){
+				if($(".m-hidden").is(":hidden")){
+				    $(".m-hidden").show("normal");
+				    $(this).find('.m-t').text('收起')
+				    $(this).find('.iconfont').removeClass('icon-zhankai').addClass('icon-shouqi')
+				   }
+				   else{
+				    $(".m-hidden").hide("normal");
+				    $(this).find('.m-t').text('展开')
+				    $(this).find(".iconfont").removeClass("icon-shouqi").addClass("icon-zhankai");
+				 }
+			})
+			$('.e-c-title span').on('click',function(){
+				$(this).siblings().removeClass('active')
+				$(this).addClass('active')
+				alert("这里的切换尚未在psd中找到页面，所以没做！")
+			})
+				
+		</script>
+	</body>
+</html>
